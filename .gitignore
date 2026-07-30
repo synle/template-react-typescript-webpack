@@ -38,3 +38,11 @@ _build
 .svelte-kit
 Pods
 DerivedData
+
+# Migrated from .prettierignore
+*.spec.js
+*.spec.jsx
+*.spec.ts
+*.spec.jsx
+build
+dist

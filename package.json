@@ -9,10 +9,11 @@
     "postbuild": "cpx src/index.html build",
     "fix-import": "npx import-fixer --groupImport --transformRelativeImport --importQuote=single",
     "preformat": "npm run fix-import",
-    "format": "npx prettier --config ./.prettierrc --write **/*.{ts,tsx,js,jsx,scss,yml,html,json,md}",
+    "format": "oxfmt --write .",
     "dev": "webpack serve --config webpack-ui.js",
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "oxfmt --check ."
   },
   "repository": {
     "type": "git",
